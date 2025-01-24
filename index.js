@@ -29,10 +29,10 @@ function showModal() {
                 setTimeout(() => {
                     closeModal(modal, overlay, song);
                     showBirthdayMessage();
-                }, 2000);
+                }, 42000);
             }
-        }, 2000);
-    },2000)
+        }, 3000);
+    },5000)
     
 
     overlay.onclick = () => closeModal(modal, overlay, song);
