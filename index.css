@@ -116,6 +116,23 @@ button:hover {
     margin-bottom: 20px;
 }
 
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -127,9 +144,10 @@ button:hover {
     display: none;
 }
 
-.love{
+.love {
     margin-bottom: 10px;
 }
+
 @keyframes floatUp {
     0% {
         transform: translateY(0) rotate(45deg);
@@ -182,10 +200,20 @@ button:hover {
         padding: 8px 18px;
         font-size: 0.8rem;
     }
-    .modal{
+    .modal {
         width: 350px;
     }
     .modal img {
         width: 150px;
     }
+}
+
+/* Animation for changing modal images */
+#birthdayImage {
+    transition: opacity 0.5s ease-in;
+    opacity: 1;
+}
+
+#birthdayImage.hidden {
+    opacity: 0;
 }
